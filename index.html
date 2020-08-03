@@ -56,50 +56,53 @@
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-7">Iniciar Sesión<br>Ingresa con las credenciales de tu grupo</h2>
-                
-</head>
-<center>
-<body bgcolor="#FFFFFF">
-<form name="login" ></h2>
-<table width="200" border="0" cellpadding="3">
-<tr>
-<td width="75"><font size="2">Usuario:</font></td>
-<td width="50"><input type="text" name="username" size="20"></td>
-</tr>
-<tr>
-<td width="75"><font size="2">Contraseña:</font></td>
-<td width="50"><input type="password" name="password" size="20"></td>
-</tr>
-<tr>
-<td colspan="2" align="center" width="200">
-<input type="button" value="Acceder" onclick="Login()"></td>
-</tr>
-</table>
-</form>
-</center>
+<center>         
+<form name="login"> 
+     <table width="200" border="0" cellpadding="3"> 
+       <tr> 
+         <th height="20" scope="row"><font size="2">Usuario</font></th> 
+         <td><span class="cnt"> 
+           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th height="20" scope="row"><font size="2">Clave</font></th> 
+         <td><span class="cnt"> 
+           <input name="password" type="password" class="Input" value="" size="20" /> 
+         </span></td>
+       </tr> 
+       <tr align="center"> 
+<th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th> 
+          <td><span class="cnt"> 
+           <input value="Acceder" target="_parent" onclick="Login()" type="button" class="boton"/> 
+         </span></td> 
+       </tr> 
+     </table> 
+</form> 
+  </center>
 
-<center>
- <p>&nbsp;</p>
-</center>
-          
-<script LANGUAGE="JavaScript">
-<!-- 
+<script language="JavaScript"> 
 function Login(){ 
 var done=0; 
 var usuario=document.login.usuario.value; 
-var password=document.login.password.value;
-if (usuario=="grupoag07" && password=="abc2020") { window.location="https://server51test.github.io/aggrupo01.html"; } 
-if (usuario=="" && password=="") { window.location="https://server51test.github.io/index.html"; } 
-}  
-
--->
-</script>
+var password=document.login.password.value; 
+if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
+window.location="WWW.GOOGLE.COM"; 
+} 
+if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
+window.location="WWW.BING.COM"; 
+} 
+if (usuario=="" && password=="") { 
+window.location="ERROR.HTML"; 
+} 
+} 
+        </script> 
 </center> 
 <script language="Javascript"> 
 <!-- Begin 
 document.oncontextmenu = function(){return false} 
 // End --> 
-</script>              
+</script>           
 
                 
             </div>
