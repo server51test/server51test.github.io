@@ -56,27 +56,32 @@
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-7">Iniciar Sesión<br>Ingresa con las credenciales de tu grupo</h2>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para varios usuario</title>
+</head>
+
 <center>         
 <form name="login"> 
      <table width="200" border="0" cellpadding="3"> 
        <tr> 
-         <th height="20" scope="row"><font size="2">Usuario</font></th> 
+         <th height="20" ><font size="2">Usuario</font></th> 
          <td><span class="cnt"> 
            <input name="usuario" type="text" class="Input" value="" size="20" /> 
          </span></td> 
        </tr> 
        <tr> 
-         <th height="20" scope="row"><font size="2">Clave</font></th> 
+         <th height="20" ><font size="2">Clave</font></th> 
          <td><span class="cnt"> 
            <input name="password" type="password" class="Input" value="" size="20" /> 
          </span></td>
        </tr> 
-       <tr align="center"> 
-<th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th> 
-          <td><span class="cnt"> 
-           <input value="Acceder" target="_parent" onclick="Login()" type="button" class="boton"/> 
-         </span></td> 
-       </tr> 
+       <th> 
+       <span class="cnt"> 
+         <th height="20" ><input value="Acceder" target="_parent" onclick="Login()" type="button" class="boton"/> </th>
+         </span> 
+       </th> 
      </table> 
 </form> 
   </center>
@@ -93,7 +98,7 @@ if (usuario=="USUARIO2" && password=="CONTRASEÑA2") {
 window.location="WWW.BING.COM"; 
 } 
 if (usuario=="" && password=="") { 
-window.location="ERROR.HTML"; 
+window.location="index.html"; 
 } 
 } 
         </script> 
@@ -102,8 +107,9 @@ window.location="ERROR.HTML";
 <!-- Begin 
 document.oncontextmenu = function(){return false} 
 // End --> 
-</script>           
-
+</script>
+</body>
+</html>
                 
             </div>
         </div>
